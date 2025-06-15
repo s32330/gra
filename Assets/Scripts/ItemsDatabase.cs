@@ -21,9 +21,8 @@ public class ItemsDatabase : MonoBehaviour
         InventoryManager.Instance.UpdateSlots();
     }
 
-
 }
-//zeby lista sie wyswietlala v
+
 [System.Serializable]
 public class Item
 {
@@ -38,8 +37,7 @@ public class Item
     public ItemType Type;
     public Sprite Icon;
 
-    // po to zeby od razu przy dodawaniu itemu napisac wszystkie zmienne
-    public Item(string Name, string Description, int ID, ItemType Type, Sprite Icon)
+        public Item(string Name, string Description, int ID, ItemType Type, Sprite Icon)
     {
         this.Name = Name;
         this.Description = Description;

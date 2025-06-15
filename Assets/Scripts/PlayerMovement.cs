@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     InventoryManager Inventory;
     private Vector3 input;
-    // Start is called before the first frame update
+  
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         Inventory = GameObject.Find("Canvas").GetComponent<InventoryManager>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
@@ -36,8 +36,8 @@ public class PlayerMovement : MonoBehaviour
     public void Move()
     {
         float moveInput = Input.GetAxis("Horizontal");
-        float inputX = moveInput; //nowo dodane
-        float inputY = Input.GetAxis("Vertical"); //nowo dodane
+        float inputX = moveInput; 
+        float inputY = Input.GetAxis("Vertical"); 
 
         Flip(moveInput);
 

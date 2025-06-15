@@ -11,7 +11,6 @@ public class Collectible : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        //check if collision is Player
         if (!collision.gameObject.CompareTag("Player"))
         {
             return;
